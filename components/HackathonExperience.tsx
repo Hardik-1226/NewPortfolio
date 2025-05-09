@@ -9,29 +9,33 @@ interface Hackathon {
   position: string;
   description: string;
   icon: typeof FaTrophy;
+  image: string;
 }
 
 const hackathons: Hackathon[] = [
   {
-    title: "Annual Tech Fest Hackathon",
-    date: "2023",
-    position: "1st Place",
-    description: "Developed an AI-powered healthcare solution for early disease detection",
-    icon: FaTrophy
+    title: "IIIT Delhi Hackathon",
+    date: "2025",
+    position: "Winner (1st Place)",
+    description: "Built an AI agent that recommends government schemes based on user profiles. Included voice assistant and authentication.",
+    icon: FaTrophy,
+    image: "/20250221_163031.jpg"
   },
   {
-    title: "National IoT Challenge",
-    date: "2023",
-    position: "2nd Place",
-    description: "Created a smart home automation system with voice control",
-    icon: FaMedal
+    title: "GGSIPU Vespera Hackathon",
+    date: "2024",
+    position: "Top 10 Finalist",
+    description: "Built 'SunShare', a solar community sharing investment platform tailored to the Indian context.",
+    icon: FaMedal,
+    image: "/Screenshot_20250509_195950_WhatsApp.jpg"
   },
   {
-    title: "Startup Weekend",
-    date: "2022",
-    position: "Best Innovation",
-    description: "Pitched and developed a sustainable energy management platform",
-    icon: FaAward
+    title: "GFG Hackathon",
+    date: "2023",
+    position: "Built SpendWise",
+    description: "Developed a student-centric budgeting web app with expense tracking and smart goal setting.",
+    icon: FaAward,
+    image: "/20250509_200326.jpg"
   }
 ];
 
@@ -46,9 +50,9 @@ export default function HackathonExperience() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 glow-text">Hackathon Experience</h2>
+          <h2 className="text-4xl font-bold mb-4 text-white">Hackathon Experience</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Showcasing my competitive spirit and innovative thinking
+            Highlights of my journey in tech competitions and building impactful solutions under pressure.
           </p>
         </motion.div>
 
@@ -60,17 +64,22 @@ export default function HackathonExperience() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="relative pl-8 pb-12 border-l-2 border-blue-500 last:border-l-0"
+              className="relative pl-8 pb-12 border-l-2 border-white last:border-l-0"
             >
-              <div className="absolute -left-3 top-0 w-6 h-6 rounded-full bg-blue-500 flex items-center justify-center">
-                <hackathon.icon className="text-white text-sm" />
+              <div className="absolute -left-3 top-0 w-6 h-6 rounded-full bg-white flex items-center justify-center">
+                <hackathon.icon className="text-black text-sm" />
               </div>
               <div className="bg-gray-900 p-6 rounded-lg">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="text-xl font-bold text-white">{hackathon.title}</h3>
-                  <span className="text-blue-500 font-semibold">{hackathon.position}</span>
+                  <span className="text-white font-semibold">{hackathon.position}</span>
                 </div>
                 <div className="text-gray-400 text-sm mb-4">{hackathon.date}</div>
+                <img
+                  src={hackathon.image}
+                  alt={hackathon.title}
+                  className="w-full h-80 object-cover rounded-lg mb-4"
+                />
                 <p className="text-gray-300">{hackathon.description}</p>
               </div>
             </motion.div>
@@ -79,4 +88,4 @@ export default function HackathonExperience() {
       </div>
     </section>
   );
-} 
+}
