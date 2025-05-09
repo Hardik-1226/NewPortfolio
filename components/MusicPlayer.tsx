@@ -38,7 +38,7 @@ export default function SimpleMusicToggle() {
 
       <audio
         ref={audioRef}
-        src="/Gangsta's Paradise-BarmanMusic.Com.mp3"
+        src="/Gangsta's Paradise-BarmanMusic (mp3cut.net).mp3"
         autoPlay
         loop
       />
