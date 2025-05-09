@@ -14,24 +14,24 @@ const achievements: Achievement[] = [
   {
     title: "Winner – IIIT Delhi National Hackathon",
     description: "Secured 1st place among 50+ teams for AI Scheme Recommender.",
-    image: "/profile.jpg",
+    image: "/20250221_165439.jpg",
     date: "2024"
   },
   {
     title: "PR Team Member – Abhyudaya Club, GL Bajaj",
     description: "Active member of the public relations team, organizing and promoting tech events.",
-    image: "",
+    image: "/IMG_9021[1].PNG",
     date: "2024"
   },
   {
-    title: "Organized AI-based Hackathon",
-    description: "Organized a hackathon with ₹20,000 sponsorship secured.",
-    image: "/portfolio\profile.jpg.jpg",
+    title: "Organized Supernova Hackathon",
+    description: "Best time ever.",
+    image: "/1745512560110.jpeg",
     date: "2023"
   },
   {
     title: "Self-learning & Balancing Exams",
-    description: "Currently self-learning ML, Web3, TensorFlow, DSA in C++ while preparing for SSC CGL, ISRO, and DRDO.",
+    description: "Currently self-learning ML, Web3, TensorFlow, DSA in C++ while preparing for SSC CGL.",
     image: "/profile.png",
     date: "2024"
   }
@@ -64,7 +64,7 @@ export default function Achievements() {
               viewport={{ once: true }}
               className="bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-300"
             >
-              <div className="relative h-48 w-full">
+              <div className="relative h-60 w-full">
                 <Image
                   src={achievement.image}
                   alt={achievement.title}
@@ -83,4 +83,4 @@ export default function Achievements() {
       </div>
     </section>
   );
-} 
+}
