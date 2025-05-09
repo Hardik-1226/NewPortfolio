@@ -25,7 +25,7 @@ export default function About() {
               className="relative w-64 h-64 rounded-full overflow-hidden"
             >
               <Image
-                src="/profile.png"
+                src="/20250208_134325.jpg"
                 alt="Hardik Varshney"
                 fill
                 className="object-cover"
