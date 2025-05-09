@@ -11,13 +11,7 @@ export default function SimpleMusicToggle() {
     const audio = audioRef.current;
     if (audio) {
       audio.volume = 0.5;
-      audio.muted = true; // Allow autoplay
-      audio
-        .play()
-        .then(() => {
-          audio.muted = false; // Unmute after play starts
-        })
-        .catch((err) => console.error("Autoplay error:", err));
+      audio.play().catch((err) => console.error("Autoplay error:", err));
     }
   }, []);
 
@@ -27,7 +21,7 @@ export default function SimpleMusicToggle() {
       if (isPlaying) {
         audio.pause();
       } else {
-        audio.play().catch((err) => console.error("Play error:", err));
+        audio.play();
       }
       setIsPlaying(!isPlaying);
     }
