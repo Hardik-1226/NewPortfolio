@@ -44,7 +44,7 @@ export default function Contact() {
               </div>
               <div className="flex items-center space-x-4">
                 <FaMapMarkerAlt className="text-blue-500 text-xl" />
-                <span className="text-gray-300">Bahjoi, Uttar Pradesh, India</span>
+                <span className="text-gray-300">Gr. Noida, Uttar Pradesh, India</span>
               </div>
             </div>
 
@@ -68,7 +68,7 @@ export default function Contact() {
                   <FaLinkedin className="text-2xl" />
                 </a>
                 <a
-                  href="https://twitter.com/yourusername"
+                  href="https://x.com/H_var25"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-blue-500 transition-colors"
