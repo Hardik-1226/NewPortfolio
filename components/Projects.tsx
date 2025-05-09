@@ -25,7 +25,7 @@ const projects: Project[] = [
   {
     title: "SpendWise – Budgeting Tool for Students",
     description: "Web app to help students track and manage spending. Included expense insights, budget planning, and visual charts. Featured in college hackathon.",
-    image: "/Screenshot 2025-05-09 201944.png",
+    image: "/Screenshot_2025-05-09_201944.png",
     technologies: ["React", "Charts", "Budgeting"],
     githubUrl: "",
     liveUrl: "https://coding-panda.vercel.app/"
@@ -38,7 +38,6 @@ const projects: Project[] = [
     githubUrl: "https://github.com/hardikvarshney5/sunshare",
     liveUrl: "https://eagle-bitz-f64p.vercel.app/"
   },
- 
   {
     title: "AI Career Mapping Tool – for WsCube Hackathon",
     description: "Career recommendation AI tool for undergraduates. Personalized journey mapping based on interests and skills.",
@@ -81,6 +80,7 @@ export default function Projects() {
                   src={project.image}
                   alt={project.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover"
                 />
               </div>
@@ -98,22 +98,26 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-4">
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-blue-500 transition-colors"
-                  >
-                    <FaGithub className="text-xl" />
-                  </a>
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-blue-500 transition-colors"
-                  >
-                    <FaExternalLinkAlt className="text-xl" />
-                  </a>
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-blue-500 transition-colors"
+                    >
+                      <FaGithub className="text-xl" />
+                    </a>
+                  )}
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-blue-500 transition-colors"
+                    >
+                      <FaExternalLinkAlt className="text-xl" />
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>
@@ -122,4 +126,4 @@ export default function Projects() {
       </div>
     </section>
   );
-} 
+}
