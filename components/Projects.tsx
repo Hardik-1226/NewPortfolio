@@ -25,27 +25,20 @@ const projects: Project[] = [
   {
     title: "SpendWise – Budgeting Tool for Students",
     description: "Web app to help students track and manage spending. Included expense insights, budget planning, and visual charts. Featured in college hackathon.",
-    image: "/profile.jpg",
+    image: "/Screenshot 2025-05-09 201944.png",
     technologies: ["React", "Charts", "Budgeting"],
-    githubUrl: "https://github.com/hardikvarshney5/spendwise",
-    liveUrl: "#"
+    githubUrl: "",
+    liveUrl: "https://coding-panda.vercel.app/"
   },
   {
     title: "SunShare – Community Solar Investment Platform",
     description: "Built for a hackathon around sustainability. Users can buy shares in solar projects and track energy savings. INR-based financial visualization included.",
-    image: "/profile.jpg",
+    image: "/HomePageSunShare.png",
     technologies: ["Web3", "Sustainability", "Finance"],
     githubUrl: "https://github.com/hardikvarshney5/sunshare",
-    liveUrl: "#"
+    liveUrl: "https://eagle-bitz-f64p.vercel.app/"
   },
-  {
-    title: "Smart Helmet (IoT Project – Ongoing)",
-    description: "Gesture-based virtual keyboard using smartwatch sensor. Hardware: OV7670 Camera, 1.3\" TIC Display, ADXL345 Sensor, Solar Panel. Aims to reduce dependency on physical input devices.",
-    image: "/profile.jpg",
-    technologies: ["IoT", "Hardware", "Sensors"],
-    githubUrl: "https://github.com/hardikvarshney5/smart-helmet",
-    liveUrl: "#"
-  },
+ 
   {
     title: "AI Career Mapping Tool – for WsCube Hackathon",
     description: "Career recommendation AI tool for undergraduates. Personalized journey mapping based on interests and skills.",
