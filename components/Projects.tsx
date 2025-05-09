@@ -17,7 +17,7 @@ const projects: Project[] = [
   {
     title: "AI Scheme Recommender (Winner - IIIT Delhi Hackathon)",
     description: "Built an AI-based agent that recommends government schemes based on a user profile. Integrated voice assistant, FastAPI backend, and Supabase (attempted). Won first prize among 50+ teams.",
-    image: "/profile.jpg",
+    image: "/HomePageSunShare.png",
     technologies: ["AI", "FastAPI", "Supabase", "Voice Assistant"],
     githubUrl: "https://github.com/hardikvarshney5/ai-scheme-recommender",
     liveUrl: "#"
